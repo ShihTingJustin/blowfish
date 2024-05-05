@@ -3,12 +3,12 @@
     {{ if .Site.Params.Logo }}
     {{ $logo := resources.Get .Site.Params.Logo }}
     {{ if $logo }}
-    <div>
+    <div class="App-logo">
         <a href="{{ "" | relLangURL }}" class="flex">
             <span class="sr-only">{{ .Site.Title | markdownify | emojify }}</span>
 
-            <img src="{{ $logo.RelPermalink }}" width="{{ div $logo.Width 2 }}" height="{{ div $logo.Height 2 }}"
-                class="logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="{{ .Site.Title }}" />
+            <img src="{{ $logo.RelPermalink }}" width="{{ div $logo.Width 10 }}" height="{{ div $logo.Height 10 }}"
+                class="animate-spin logo max-h-[5rem] max-w-[5rem] object-scale-down object-left nozoom" alt="{{ .Site.Title }}" />
 
         </a>
     </div>
