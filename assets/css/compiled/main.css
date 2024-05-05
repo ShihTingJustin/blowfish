@@ -2080,19 +2080,6 @@ select {
   transform:none
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-}
-
 @keyframes pulse {
   50% {
     opacity:.5
@@ -2101,6 +2088,34 @@ select {
 
 .animate-pulse {
   animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite
+}
+
+@keyframes spin {
+  to {
+    transform:rotate(360deg)
+  }
+
+  from {
+    transform:rotate(0deg)
+  }
+}
+
+.animate-spin {
+  animation:spin 1s linear infinite
+}
+
+@keyframes spin {
+  to {
+    transform:rotate(360deg)
+  }
+
+  from {
+    transform:rotate(0deg)
+  }
+}
+
+.animate-spin-slow {
+  animation:spin 20s linear infinite
 }
 
 .cursor-default {
