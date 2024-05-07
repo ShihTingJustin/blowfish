@@ -2100,20 +2100,6 @@ select {
   }
 }
 
-.animate-spin {
-  animation:spin 1s linear infinite
-}
-
-@keyframes spin {
-  to {
-    transform:rotate(360deg)
-  }
-
-  from {
-    transform:rotate(0deg)
-  }
-}
-
 .animate-spin-slow {
   animation:spin 20s linear infinite
 }
